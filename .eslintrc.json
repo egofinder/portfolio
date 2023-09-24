@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "react-app",
+    "plugin:react-hooks/recommended"
+  ]
+}
