@@ -1,5 +1,5 @@
 'use client';
-
+// test
 import React, { useState, useEffect } from 'react';
 import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
