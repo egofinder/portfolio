@@ -97,51 +97,56 @@ function App() {
   }, []);
 
   return (
-    <div className="m-5">
-      <div className="flex justify-center flex-auto m-5">
-        <MovieListHeading heading="Movies" />
-        <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
-      </div>
-
-      <div className="flex items-center justify-center p-6 m-5 mx-auto space-x-4 overflow-auto shadow-lg rounded-xl bg-slate-50">
-        {currentRecords.length > 0 ? (
-          <MovieList
-            movies={currentRecords}
-            favouriteComponent={AddFavourites}
-            handleFavouritesClick={addFavouriteMovie}
-            handleDetailClick={getMovieDetail}
-          />
-        ) : (
-          'No List'
-        )}
-      </div>
-      <div className="flex justify-center">
-        <Pagination
-          handlePrevPageClick={prevPage}
-          handleNextPageClick={nextPage}
-        />
-      </div>
-
+    <section>
       <div className="m-5">
-        <MovieListHeading heading="Favourites" />
-      </div>
-
-      <div className="flex items-center justify-center p-6 m-5 mx-auto space-x-4 overflow-auto shadow-lg rounded-xl">
-        {favourites.length > 0 ? (
-          <MovieList
-            movies={favourites}
-            handleFavouritesClick={removeFavouriteMovie}
-            favouriteComponent={RemoveFavourites}
-            detailComponent={ShowDetail}
-            handleDetailClick={getMovieDetail}
-            hasDetail={showDetail}
-            handleCancleDetailClick={removeMovieDetail}
+        <div className="flex justify-center flex-auto m-5">
+          <MovieListHeading heading="Movies" />
+          <SearchBox
+            searchValue={searchValue}
+            setSearchValue={setSearchValue}
           />
-        ) : (
-          <div className="text-5xl">Please add favorite movie!</div>
-        )}
+        </div>
+
+        <div className="flex items-center justify-center p-6 m-5 mx-auto space-x-4 overflow-auto shadow-lg rounded-xl bg-slate-50">
+          {currentRecords.length > 0 ? (
+            <MovieList
+              movies={currentRecords}
+              favouriteComponent={AddFavourites}
+              handleFavouritesClick={addFavouriteMovie}
+              handleDetailClick={getMovieDetail}
+            />
+          ) : (
+            'No List'
+          )}
+        </div>
+        <div className="flex justify-center">
+          <Pagination
+            handlePrevPageClick={prevPage}
+            handleNextPageClick={nextPage}
+          />
+        </div>
+
+        <div className="m-5">
+          <MovieListHeading heading="Favourites" />
+        </div>
+
+        <div className="flex items-center justify-center p-6 m-5 mx-auto space-x-4 overflow-auto shadow-lg rounded-xl">
+          {favourites.length > 0 ? (
+            <MovieList
+              movies={favourites}
+              handleFavouritesClick={removeFavouriteMovie}
+              favouriteComponent={RemoveFavourites}
+              detailComponent={ShowDetail}
+              handleDetailClick={getMovieDetail}
+              hasDetail={showDetail}
+              handleCancleDetailClick={removeMovieDetail}
+            />
+          ) : (
+            <div className="text-5xl">Please add favorite movie!</div>
+          )}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
