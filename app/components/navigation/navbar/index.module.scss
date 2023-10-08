@@ -1,0 +1,16 @@
+.navbar-section {
+  background-color: var(--color-background-primary);
+  padding: 2.5rem;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 1480px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.items-wrapper {
+  font-size: var(--font-size-normal);
+  color: var(--color-primary);
+}

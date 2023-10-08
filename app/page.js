@@ -1,9 +1,11 @@
+import Hero from './components/hero';
+import AboutMe from './components/about_me';
+
 export default function Home() {
   return (
     <main>
-      <div>
-        <h1>Welcome My Page!</h1>
-      </div>
+      <Hero />
+      <AboutMe />
     </main>
   );
 }

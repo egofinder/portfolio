@@ -1,0 +1,29 @@
+.about-me-section {
+  background-color: var(--color-background-secondary);
+  padding: 10rem;
+}
+
+.contents-wrapper {
+  max-width: 1480px;
+  margin-inline: auto;
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: var(--font-size-normal);
+  letter-spacing: 0.3125rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.content {
+  font-size: var(--font-size-xx-large);
+  letter-spacing: -0.1rem;
+  line-height: 100%;
+  word-wrap: break-word;
+  font-weight: 600;
+
+  &--secondary-color {
+    color: var(--color-secondary);
+  }
+}

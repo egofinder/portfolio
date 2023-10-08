@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  --color-background-primary: #000000;
+  --color-background-secondary: #151414;
+
+  --color-primary: #ae9e89;
+  --color-secondary: #ff7948;
+
+  --font-size-title: clamp(6.25rem, 9.45vw + -0.74rem, 8rem);
+  --font-size-xx-large: clamp(1.56rem, 3.58vw + 0.69rem, 4rem);
+  --font-size-large: 28px;
+  --font-size-normal: 20px;
+  --font-size-small: 16px;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -9,6 +23,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /* outline: 1px red solid; */
 }
 /*
   2. Remove default margin
@@ -24,6 +39,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--color-background-primary);
 }
 /*
   5. Improve media defaults
