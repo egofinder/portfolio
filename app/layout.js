@@ -1,10 +1,10 @@
 import './globals.css';
-import { Titillium_Web } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import Navigation from './components/navigation';
 
-const titillium_web = Titillium_Web({
+const roboto = Roboto({
   subsets: ['latin'],
-  weight: ['200', '300', '400', '600', '700', '900'],
+  weight: ['100', '300', '400', '500', '700', '900'],
 });
 
 export const metadata = {
@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={titillium_web.className}>
+    <html lang="en" className={roboto.className}>
       <body>
         <Navigation />
         {children}

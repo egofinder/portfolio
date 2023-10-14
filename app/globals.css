@@ -3,17 +3,25 @@
 @tailwind utilities;
 
 html {
+  min-height: 500vh;
   --color-background-primary: #000000;
   --color-background-secondary: #151414;
 
   --color-primary: #ae9e89;
   --color-secondary: #ff7948;
 
-  --font-size-title: clamp(6.25rem, 9.45vw + -0.74rem, 8rem);
-  --font-size-xx-large: clamp(1.56rem, 3.58vw + 0.69rem, 4rem);
-  --font-size-large: 28px;
-  --font-size-normal: 20px;
-  --font-size-small: 16px;
+  --text-small: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+  --text-9xl: 8rem;
 }
 
 /*

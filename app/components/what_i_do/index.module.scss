@@ -1,0 +1,30 @@
+.what-i-do-section {
+  max-width: 1440px;
+  position: relative;
+  padding: 5rem;
+  margin-inline: auto;
+}
+
+.contents-wrapper {
+  margin-inline: auto;
+  max-width: 1440px;
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: var(--text-2xl);
+  line-height: 2rem;
+  letter-spacing: 0.3125rem;
+  margin-bottom: 1rem;
+}
+
+.content {
+  width: 80%;
+  position: absolute;
+  z-index: 1;
+  font-weight: 600;
+
+  &--secondary-color {
+    color: var(--color-secondary);
+  }
+}

@@ -1,29 +1,36 @@
 .about-me-section {
+  margin-inline: auto;
+  max-width: 1440px;
+  height: 100%;
   background-color: var(--color-background-secondary);
-  padding: 10rem;
+  padding: 5rem;
 }
 
 .contents-wrapper {
-  max-width: 1480px;
   margin-inline: auto;
+  max-width: 1440px;
   color: var(--color-primary);
 }
 
 .title {
-  font-size: var(--font-size-normal);
+  font-size: var(--text-2xl);
+  line-height: 2rem;
   letter-spacing: 0.3125rem;
-  font-weight: 400;
   margin-bottom: 1rem;
 }
 
 .content {
-  font-size: var(--font-size-xx-large);
-  letter-spacing: -0.1rem;
-  line-height: 100%;
-  word-wrap: break-word;
-  font-weight: 600;
+  position: relative;
+  font-size: var(--text-6xl);
+  line-height: 1;
+}
 
-  &--secondary-color {
-    color: var(--color-secondary);
-  }
+.letter {
+  opacity: 0.2;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+}
+
+.font-color-red {
+  color: var(--color-secondary);
 }

@@ -1,12 +1,12 @@
 import Style from './index.module.scss';
 
-const Hero = () => {
+function Hero() {
   return (
     <>
       <section className={Style['hero-section']}>
         <div className={Style['container']}>
-          <div className={Style['video']}>
-            <video autoPlay muted loop>
+          <div className={Style['video-wrapper']}>
+            <video autoPlay muted loop className={Style['video']}>
               <source src="/assets/hero.webm" type="video/webm" />
             </video>
           </div>
@@ -32,6 +32,6 @@ const Hero = () => {
       </section>
     </>
   );
-};
+}
 
 export default Hero;

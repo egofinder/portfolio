@@ -1,30 +1,33 @@
 .hero-section {
   background-color: var(--color-background-primary);
-  padding: 2.5rem;
+  padding-block: 5rem;
 }
 
 .container {
   display: flex;
   margin-inline: auto;
-  max-width: 1480px;
+  max-width: 1440px;
   position: relative;
   justify-content: center;
   overflow: hidden;
 }
 
+.video-wrapper {
+  height: 600px;
+  min-height: 80vh;
+}
+
 .video {
-  object-fit: cover;
-  width: 100%;
-  min-width: 1200px;
-  height: auto;
+  height: 100%;
+  object-fit: none;
+  object-position: center center;
 }
 
 .contents-wrapper {
+  color: var(--color-primary);
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: var(--font-size-title);
-  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -32,23 +35,23 @@
 }
 
 .name {
-  color: var(--color-primary);
   text-align: center;
-  font-size: var(--font-size-normal);
+  font-size: var(--text-xl);
   letter-spacing: 0.3125rem;
+  line-height: 1.75rem;
   font-weight: 600;
 }
 
 .title {
   margin-top: auto;
   margin-bottom: auto;
+
   &__text {
     text-align: center;
     font-weight: 700;
-    color: var(--color-primary);
-    font-size: var(--font-size-title);
+    font-size: var(--text-7xl);
     letter-spacing: -0.016rem;
-    line-height: 80%;
+    line-height: 1;
 
     &--secondary-color {
       color: var(--color-secondary);

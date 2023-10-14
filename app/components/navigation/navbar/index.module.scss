@@ -1,6 +1,8 @@
 .navbar-section {
-  background-color: var(--color-background-primary);
   padding: 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 .container {
@@ -11,6 +13,7 @@
 }
 
 .items-wrapper {
-  font-size: var(--font-size-normal);
+  font-size: var(--text-xl);
+  line-height: 1.75rem;
   color: var(--color-primary);
 }
